@@ -1,0 +1,44 @@
+{
+  "entities": {
+    "LibraryItem": {
+      "title": "Library Item",
+      "description": "A stored text and its normalization result in the user's library.",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "description": "Unique ID for the item" },
+        "uid": { "type": "string", "description": "Owner's user ID" },
+        "label": { "type": "string", "description": "Display name for the item (e.g., 'FE Heroes JP')" },
+        "originalText": { "type": "string", "description": "The original noisy Japanese text" },
+        "normalizedText": { "type": "string", "description": "The normalized Japanese text" },
+        "inputTranslation": { "type": "string", "description": "English translation of input" },
+        "outputTranslation": { "type": "string", "description": "English translation of output" },
+        "url": { "type": "string", "description": "Source URL if applicable" },
+        "createdAt": { "type": "string", "format": "date-time", "description": "Timestamp of creation" }
+      },
+      "required": ["uid", "label", "originalText", "createdAt"]
+    },
+    "User": {
+      "title": "User Profile",
+      "description": "User profile information.",
+      "type": "object",
+      "properties": {
+        "uid": { "type": "string" },
+        "email": { "type": "string" },
+        "displayName": { "type": "string" },
+        "photoURL": { "type": "string" },
+        "role": { "type": "string", "enum": ["admin", "user"] }
+      },
+      "required": ["uid", "email"]
+    }
+  },
+  "firestore": {
+    "/library/{itemId}": {
+      "schema": "LibraryItem",
+      "description": "Collection of stored normalization results"
+    },
+    "/users/{userId}": {
+      "schema": "User",
+      "description": "User profile documents"
+    }
+  }
+}

@@ -1,0 +1,5 @@
+{
+  "name": "JP-Norm++: Advanced NLP Normalization System",
+  "description": "A production-ready hybrid NLP pipeline for Japanese text normalization, featuring morphological analysis, explainable AI, and multi-metric evaluation.",
+  "requestFramePermissions": []
+}
