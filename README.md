@@ -80,7 +80,6 @@ The system provides professional-grade evaluation tools:
     - **Casual**: `すごーい！今日マジ暑いね。`
     - **Honorific**: `大変素晴らしゅうございます。本日は誠に暑うございます。`
 
----
 
 *Developed as an advanced NLP research project demonstration.*
 =======
