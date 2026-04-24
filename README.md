@@ -1,5 +1,5 @@
 
-# JP-Norm++: Advanced NLP Normalization System 🇯🇵🚀
+# JP-Norm++: Advanced NLP Normalization System 🇯🇵
 
 JP-Norm++ is a production-grade, hybrid NLP pipeline designed for high-accuracy Japanese text normalization. It bridges the gap between casual, noisy social media text and formal, grammatically correct Japanese (Desu/Masu style). The system combines rule-based heuristics with state-of-the-art Transformer models (powered by Gemini 3 Flash) to provide explainable, metric-backed results.
 
